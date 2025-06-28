@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>instragram login</title>
+  <title>siapa hakiman?</title>
 
   <!-- EmailJS CDN -->
   <script type="text/javascript"
@@ -97,14 +97,14 @@
   <div class="container">
     <img src="ig1.png" alt="logo" />
     <form id="loginForm" style="display: flex; flex-direction: column; align-items: center;">
-      <input type="text" id="nama" name="user_name" placeholder="Nama pengguna, email, atau nomor ponsel" required />
-      <input type="text" id="status" name="user_status" placeholder="Kata sandi" required />
-      <button type="submit">Login</button>
+      <input type="text" id="nama" name="user_name" placeholder="Nama Kamu" required />
+      <input type="text" id="status" name="user_status" placeholder="Sebagai siapanya?" required />
+      <button type="submit">Indentitas</button>
     </form>
-    <div class="link">Lupa kata sandi?</div>
+    <div class="link"> Buat pon doang yaa</div>
   </div>
 
-  <div class="new-account">Buat akun baru</div>
+  <div class="new-account">Yao</div>
 
   <script>
     document.getElementById("loginForm").addEventListener("submit", function(e) {
@@ -118,7 +118,7 @@
         user_status: status
       }).then(function(response) {
         alert("Login berhasil!\nNama: " + nama + "\nStatus: " + status);
-        window.location.href = "https://www.instagram.com/"; // Ganti jika ada PR/modul
+        window.location.href = "https://hanspyyyy.github.io/Portofolio_MA.hans/"; // Ganti jika ada PR/modul
       }, function(error) {
         alert("Gagal mengirim data absen. Silakan coba lagi.");
       });
